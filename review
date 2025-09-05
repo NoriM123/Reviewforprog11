@@ -1,0 +1,56 @@
+
+
+void setup() {
+  background(#83CFD8);
+  size(800, 800);
+}
+
+void draw() {
+  grass();
+  house();
+  tree();
+  sun();
+}
+
+void sun () {
+  noStroke();
+  fill(255, 239, 116, 230);
+  circle(40, 40, 20);
+  fill(255, 239, 116, 200);
+  circle(40, 40, 10);
+  fill(255, 239, 116, 170);
+  circle(40, 40, 5);
+}
+
+void grass() {
+  rect(0, 700, 800, 100);
+}
+
+void house() {
+  noStroke();
+  fill(#0E809B);
+  rect(450, 500, 200, 200);
+  fill(#760103);
+  rect(525, 570, 50, 130);
+  fill(#1AEAFF);
+  triangle(615, 570, 595, 605, 635, 605);
+  fill(#1AEAFF);
+  circle(487.5, 588, 40);
+  fill(#0887A5);
+  rect(610, 400, 30, 75);
+  fill(#FF1A1A);
+  triangle(420, 500, 677.5, 500, 547.5, 350);
+}
+
+void tree() {
+  fill(#906F3A);
+  noStroke();
+  rect(170, 500, 75, 200);
+  fill(#19762F);
+  stroke(#006719);
+  triangle(100, 500, 325, 500, 207.5, 420);
+  triangle(110, 450, 305, 450, 207.5, 380);
+  triangle(120, 400, 295, 400, 207.5, 340);
+  triangle(130, 350, 285, 350, 207.5, 300);
+  triangle(140, 300, 275, 300, 207.5, 260);
+}
