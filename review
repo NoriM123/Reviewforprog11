@@ -21,15 +21,16 @@ void draw() {
 
 void sun () {
   noStroke();
-  fill(255, 239, 116, 230);
+  fill(255, 239, 116);
   circle(sunx, 40, 20);
-  fill(255, 239, 116, 200);
-  fill(255, 239, 116, 170);
+  fill(255);
+  circle(sunx+800, 40, 20);
   sunx=sunx+3;
+
   if (sunx>width) {
     sunx=-800;
   }
-  
+
   if (sunx>0) {
     bgbrightness = 255;
   }
@@ -40,6 +41,7 @@ void sun () {
 }
 
 void grass() {
+  fill(#197600);
   rect(0, 700, 800, 100);
 }
 
